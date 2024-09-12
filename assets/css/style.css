@@ -6621,3 +6621,7 @@ ul {
   color: white;
   font-size: 1.5rem;
 }
+
+.single-product .part-img > img{
+  min-height: 200px;
+}

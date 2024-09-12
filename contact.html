@@ -147,7 +147,7 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="txt">
-                                <p>54B, Tailstoi Town 5238 MT, La city, IA 522364</p>
+                                <p>9, Maharshi Debendra Road, Kolkata, West Bengal - 700007</p>
                             </div>
                         </div>
                         <div class="single-box">
@@ -181,11 +181,11 @@
                 <div class="col-xl-5 col-lg-5">
                     <div class="contact-form">
                         <h3>Let us hear your thoughts</h3>
-                        <form>
-                            <input type="text" placeholder="Your name">
-                            <input type="email" placeholder="Your Email">
-                            <textarea placeholder="Your Message"></textarea>
-                            <button>Send Message</button>
+                        <form id="steelioform">
+                            <input id="name" type="text" placeholder="Your name">
+                            <input id="email" type="email" placeholder="Your Email">
+                            <textarea id="message" placeholder="Your Message"></textarea>
+                            <button type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -196,8 +196,9 @@
 
     <!-- map begin -->
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.413344553431!2d-73.10631032375255!3d44.97591367107019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9f440c197dbb5%3A0xb077aa39d2e9b30c!2sChevalier%20Drilling%20Inc!5e0!3m2!1sen!2sin!4v1726050448277!5m2!1sen!2sin" style="border:0;" allowfullscreen=""></iframe>
-    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.8798118032687!2d88.34931357530081!3d22.583598079483824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b9c774b2b9%3A0x9eb7282e109e432d!2s9%2C%20Maharshi%20Debendra%20Rd%2C%20Raja%20Katra%2C%20Loha%20Patti%2C%20Bara%20Bazar%2C%20Jorasanko%2C%20Kolkata%2C%20West%20Bengal%20700007!5e0!3m2!1sen!2sin!4v1726116597675!5m2!1sen!2sin" style="border:0;" allowfullscreen=""></iframe>
+
+     </div>
 
    
 
@@ -255,7 +256,7 @@
 
                         
                              <p style="color: white;">
-                                Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Going forward has evolved from generation
+                                Singhi Enterprises was established in 1987 and has been a trusted name in the industry for decades. They are known for their commitment to quality, customer satisfaction, and innovation.
                              </p>
                              <img style="width: 200px;margin-left: -40px;" src="https://steelio.in/wp-content/uploads/2023/08/steelio_png-01-white-color-300x133.png" alt="">
 
@@ -393,5 +394,30 @@
     <script src="assets/js/rangeslider.js"></script>
     <!-- main -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document
+          .getElementById("steelioform")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+      
+            // Get form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const Message = document.getElementById("message").value;
+             
+            const phoneNumber = "9883051500";
+      
+            // Construct the WhatsApp URL
+      
+            const whatsappURL = "https://wa.me/" + phoneNumber + "?text="
+            + "*Name:* " + name + "%0a"
+            + "*Email:* " + email + "%0a"
+            + "*Message* " +  Message + "%0a"
+      
+            // Open WhatsApp with the pre-filled message
+            window.open(whatsappURL, "_blank");
+          });
+      </script>
   </body>
 </html>
