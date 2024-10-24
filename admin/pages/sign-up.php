@@ -117,6 +117,7 @@
       {
         session_start();
         $_SESSION['AdminLoginId'] = $_POST['adminname'];
+        header("loaction: index.php");
        }
       else{
         echo "<script>alert('incorrect password')</script>";
